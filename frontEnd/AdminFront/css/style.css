@@ -1,0 +1,80 @@
+
+
+
+.loginCard{
+	width:40%;
+}
+
+
+
+
+.wrapper-padding{
+padding: 1% 1% 1% 1% ;
+}
+.form-control:focus {
+	border-color: black;
+	box-shadow: none;
+}
+
+
+  
+.form-control{
+	box-shadow: none;
+}
+
+.user-banner{
+	border-radius: 0% !important;
+	height: 240px;
+}
+
+.user-logo{
+	width: 100px;
+	height: 100px;
+}
+
+.card-shadow{
+	box-shadow: 3px 2px 3px  rgba(0, 0, 0, .2);
+
+}
+
+.item-icon{
+	width: 30px;
+	height: 30px;
+}
+
+.side-menu-icon{
+	width: 20px;
+	height: 20px;
+}
+.f-8{
+	font-size: 8px !important;
+}
+
+.f-12{
+	font-size: 12px !important;
+}
+.f-24{
+	font-size: 24px;
+}
+
+.f-28{
+	font-size: 28px;
+}
+.f-32{
+	font-size: 32px;
+}
+
+.f-36{
+	font-size: 36px;
+}
+
+.w-70{
+	width: 70%;
+}
+.w-30{
+	width: 30%;
+}
+
+.tab-margin{
+margin: 0px  !important;
+}

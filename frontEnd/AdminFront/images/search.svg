@@ -1,0 +1,23 @@
+<svg id="Group_404" data-name="Group 404" xmlns="http://www.w3.org/2000/svg" viewBox="-5115 389 60.018 60.981">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #e30613;
+      }
+
+      .cls-2 {
+        stroke: #e30613;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="filesearch" transform="translate(-5115.491 389)">
+    <path id="Path_91" data-name="Path 91" class="cls-1" d="M36.491,22h-25a1,1,0,0,0,0,2h25a1,1,0,0,0,0-2Z"/>
+    <path id="Path_92" data-name="Path 92" class="cls-1" d="M11.491,16h10a1,1,0,0,0,0-2h-10a1,1,0,0,0,0,2Z"/>
+    <path id="Path_93" data-name="Path 93" class="cls-1" d="M37.491,31a1,1,0,0,0-1-1h-25a1,1,0,0,0,0,2h25A1,1,0,0,0,37.491,31Z"/>
+    <path id="Path_94" data-name="Path 94" class="cls-1" d="M29.491,39a1,1,0,0,0-1-1h-17a1,1,0,1,0,0,2h17A1,1,0,0,0,29.491,39Z"/>
+    <path id="Path_95" data-name="Path 95" class="cls-1" d="M11.491,46a1,1,0,0,0,0,2h14a1,1,0,0,0,0-2Z"/>
+    <path id="Path_96" data-name="Path 96" class="cls-1" d="M2.491,2h29V16h14V31h2V14.586L32.9,0H.491V60h37V58h-35V2Zm31,1.414L44.077,14H33.491Z"/>
+    <path id="Path_97" data-name="Path 97" class="cls-2" d="M59.232,58.291l-5.97-6.244A10.832,10.832,0,1,0,51.786,53.4l6,6.276a1,1,0,1,0,1.445-1.381ZM36.491,44.8a8.8,8.8,0,1,1,8.8,8.8A8.806,8.806,0,0,1,36.491,44.8Z"/>
+  </g>
+</svg>
