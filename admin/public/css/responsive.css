@@ -1,0 +1,33 @@
+@media (max-width: 575.98px) {
+    .loginCard{width:90%;}
+    .wrapper-padding{ padding: 20% 4% 4% 4% !important;}
+    .user-logo{width: 80px; height: 80px;}
+    .float-btn{float:right !important;}
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .loginCard{width:90%;}
+    .wrapper-padding{ padding: 15% 4% 4% 4% !important;}
+    .user-logo{width: 80px; height: 80px;}
+    .float-btn{float:right !important;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .loginCard{width:70%;}
+    .user-logo{width: 80px; height: 80px;}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .loginCard{width:60%;}
+}
+
+@media (min-width: 1200px) {
+    .loginCard{width:40%;}
+
+}
+
+
+
