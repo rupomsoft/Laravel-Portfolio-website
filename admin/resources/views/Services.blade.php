@@ -1,9 +1,7 @@
 @extends('Layout.app')
-
 @section('content')
 
-
-<div class="container">
+<div id="mainDiv" class="container d-none">
 <div class="row">
 <div class="col-md-12 p-5">
 <table id="" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -16,37 +14,66 @@
 	  <th class="th-sm">Delete</th>
     </tr>
   </thead>
-  <tbody>
-  
-	<tr>
-      <th class="th-sm"><img class="table-img" src="http://localhost/images/code.svg"></th>
-	  <th class="th-sm">আইটি কোর্স</th>
-	  <th class="th-sm">মোবাইল এবং ওয়েব এপ্লিকেশন ডেভেলপমেন্ট</th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-edit"></i></a></th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-trash-alt"></i></a></th>
-    </tr>	
-	<tr>
-      <th class="th-sm"><img class="table-img" src="http://localhost/images/code.svg"></th>
-	  <th class="th-sm">আইটি কোর্স</th>
-	  <th class="th-sm">মোবাইল এবং ওয়েব এপ্লিকেশন ডেভেলপমেন্ট</th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-edit"></i></a></th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-trash-alt"></i></a></th>
-    </tr>
-	<tr>
-      <th class="th-sm"><img class="table-img" src="http://localhost/images/code.svg"></th>
-	  <th class="th-sm">আইটি কোর্স</th>
-	  <th class="th-sm">মোবাইল এবং ওয়েব এপ্লিকেশন ডেভেলপমেন্ট</th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-edit"></i></a></th>
-	  <th class="th-sm"><a href="" ><i class="fas fa-trash-alt"></i></a></th>
-    </tr>
-	
+  <tbody id="service_table">
 
   </tbody>
 </table>
-
 </div>
 </div>
 </div>
 
 
+<div id="loaderDiv" class="container">
+<div class="row">
+<div class="col-md-12 text-center p-5">
+		<img class="loading-icon m-5" src="{{asset('images/loader.svg')}}">
+</div>
+</div>
+</div>
+
+
+<div id="WrongDiv" class="container d-none">
+<div class="row">
+<div class="col-md-12 text-center p-5">
+		<h3>Something Went Wrong !</h3>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-3 text-center">
+        <h5 class="mt-4">Do You Want To Delete?</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">No</button>
+        <button type="button" class="btn  btn-sm  btn-danger">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+@endsection
+
+
+
+
+
+
+
+@section('script')
+<script type="text/javascript">
+	getServicesData();
+</script>
 @endsection

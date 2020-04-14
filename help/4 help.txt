@@ -1,0 +1,10 @@
+axios.get('/serviceget')
+  .then(function (response) {
+    var dataJSON=response.data;
+    $.each(dataJSON, function(i, item) {
+    $('<tr>').html("<td>" + dataJSON[i].service_name + "</td><td>" + dataJSON[i].service_des + "</td><td>" + dataJSON[i].service_img + "</td>").appendTo('#service_table');
+   });
+
+}).catch(function (error) {
+
+});
