@@ -1,0 +1,7 @@
+  @foreach($VisitorData as $VisitorData)
+      <tr>
+      	  <th class="th-sm">{{$VisitorData->id}}</th>
+	  <th class="th-sm">{{$VisitorData->ip_address}}</th>
+	  <th class="th-sm">{{$VisitorData->visit_time}}</th>
+     </tr>	
+   @endforeach

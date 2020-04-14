@@ -1,0 +1,34 @@
+        
+
+
+
+
+//Migration 
+
+Schema::create('visitor',function(Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('ip_address');
+	    $table->string('visit_time');
+});
+
+
+
+//Model
+
+public $table='visitor';
+public $primaryKey='id';
+public $incrementing=true;
+public $keyType='int';
+public  $timestamps=false;
+
+
+// Ip Get
+$UserIP=$_SERVER['REMOTE_ADDR'];
+
+
+
+// Date Time
+  date_default_timezone_set("Asia/Dhaka");
+  $timeDate= date("Y-m-d h:i:sa");
+
+
