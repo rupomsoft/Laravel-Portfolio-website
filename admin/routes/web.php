@@ -17,9 +17,11 @@ Route::get('/', 'HomeController@HomeIndex');
 
 Route::get('/visitor', 'VisitorController@VisitorIndex');
 
+
+
+// Admin Panel Service Management 
 Route::get('/service', 'ServiceController@ServiceIndex');
-
 Route::get('/getServicesData', 'ServiceController@getServiceData');
-
-
 Route::post('/ServiceDelete', 'ServiceController@ServiceDelete');
+Route::post('/ServiceDetails', 'ServiceController@getServiceDetails');
+Route::post('/ServiceUpdate', 'ServiceController@ServiceUpdate');
