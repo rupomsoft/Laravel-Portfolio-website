@@ -26,3 +26,12 @@ Route::post('/ServiceDelete', 'ServiceController@ServiceDelete');
 Route::post('/ServiceDetails', 'ServiceController@getServiceDetails');
 Route::post('/ServiceUpdate', 'ServiceController@ServiceUpdate');
 Route::post('/ServiceAdd', 'ServiceController@ServiceAdd');
+
+
+// Admin Panel Courses manaement 
+Route::get('/courses', 'CoursesController@CoursesIndex');
+Route::get('/getCoursesData', 'CoursesController@getCoursesData');
+Route::post('/CoursesDelete', 'CoursesController@CoursesDelete');
+Route::post('/CoursesDetails', 'CoursesController@getCoursesDetails');
+Route::post('/CoursesUpdate', 'CoursesController@CoursesUpdate');
+Route::post('/CoursesAdd', 'CoursesController@CoursesAdd');
