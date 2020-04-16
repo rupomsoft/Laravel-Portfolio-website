@@ -55,5 +55,19 @@ function ServiceUpdate(Request $req){
 }
 
 
+function ServiceAdd(Request $req){
+     $name= $req->input('name');
+     $des= $req->input('des');
+     $img= $req->input('img');
+     $result= ServicesModel::insert(['service_name'=>$name,'service_des'=>$des,'service_img'=>$img]);
+
+     if($result==true){      
+       return 1;
+     }
+     else{
+      return 0;
+     }
+}
+
 
 }

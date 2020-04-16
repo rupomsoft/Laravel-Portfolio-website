@@ -25,3 +25,4 @@ Route::get('/getServicesData', 'ServiceController@getServiceData');
 Route::post('/ServiceDelete', 'ServiceController@ServiceDelete');
 Route::post('/ServiceDetails', 'ServiceController@getServiceDetails');
 Route::post('/ServiceUpdate', 'ServiceController@ServiceUpdate');
+Route::post('/ServiceAdd', 'ServiceController@ServiceAdd');
