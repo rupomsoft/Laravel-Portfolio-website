@@ -1,0 +1,23 @@
+
+//Migration 
+
+Schema::create('courses',function(Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('course_name');
+	    $table->string('course_des');
+            $table->string('course_fee');
+            $table->string('course_totalenroll');
+            $table->string('course_totalclass');
+            $table->string('course_link');
+            $table->string('course_img');
+});
+
+
+
+//Model
+
+public $table='courses';
+public $primaryKey='id';
+public $incrementing=true;
+public $keyType='int';
+public  $timestamps=false;
