@@ -25,6 +25,12 @@ function getCoursesData() {
                 });
 
 
+                     $('.courseDeleteBtn').click(function(){
+                     	var id= $(this).data('id');
+                     	$('#CourseDeleteId').html(id);
+                     	$('#deleteCourseModal').modal('show');
+                     })
+
 
             } else {
 
@@ -127,4 +133,47 @@ function CourseAdd(CourseName,CourseDes,CourseFee,CourseEnroll,CourseClass,Cours
 
 }
 
+}
+
+
+
+
+ // Course Delete Confirm 
+$('#CourseDeleteConfirmBtn').click(function(){
+   var id= $('#CourseDeleteId').html();
+   CourseDelete(id);
+})
+
+
+ // Course Delete
+function CourseDelete(deleteID) {
+  $('#CourseDeleteConfirmBtn').html("<div class='spinner-border spinner-border-sm' role='status'></div>") //Animation....
+
+    axios.post('/CoursesDelete', {
+            id: deleteID
+        })
+        .then(function(response) {
+            $('#CourseDeleteConfirmBtn').html("Yes");
+            if(response.status==200){
+            if (response.data == 1) {
+                $('#deleteCourseModal').modal('hide');
+                toastr.success('Delete Success');
+				getCoursesData();
+            } else {
+                $('#deleteCourseModal').modal('hide');
+                toastr.error('Delete Fail');
+				getCoursesData();
+            }
+
+            }
+            else{
+             $('#deleteCourseModal').modal('hide');
+             toastr.error('Something Went Wrong !');
+            }
+
+        })
+        .catch(function(error) {
+             $('#deleteCourseModal').modal('hide');
+             toastr.error('Something Went Wrong !');
+        });
 }

@@ -89,6 +89,23 @@
 
 
 
+<div class="modal fade" id="deleteCourseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-3 text-center">
+        <h5 class="mt-4">Do You Want To Delete?</h5>
+        <h5 id="CourseDeleteId" class="mt-4">   </h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">No</button>
+        <button  id="CourseDeleteConfirmBtn" type="button" class="btn  btn-sm  btn-danger">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 @endsection
 
 
