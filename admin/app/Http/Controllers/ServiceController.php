@@ -7,7 +7,6 @@ use App\ServicesModel;
 class ServiceController extends Controller
 {
    
-
 function ServiceIndex(){
    return view('Services');	
 }
@@ -52,7 +51,6 @@ function ServiceUpdate(Request $req){
       return 0;
      }
 }
-
 
 function ServiceAdd(Request $req){
      $name= $req->input('name');

@@ -8,5 +8,6 @@
 
 @include('Component.HomeCourse')
 
+@include('Component.HomeProjects')
 
 @endsection
