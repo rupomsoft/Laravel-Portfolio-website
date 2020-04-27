@@ -7,7 +7,6 @@ use App\ServicesModel;
 class ServiceController extends Controller
 {
    
-   
 
 function ServiceIndex(){
    return view('Services');	
@@ -15,7 +14,7 @@ function ServiceIndex(){
 
 
 function getServiceData(){
-	$result=json_encode(ServicesModel::all());
+	$result=json_encode(ServicesModel::orderBy('id','desc')->get());
 	return $result;
 }
 

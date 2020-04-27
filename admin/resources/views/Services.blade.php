@@ -9,7 +9,7 @@
 
 <button id="addNewBtnId" class="btn my-3 btn-sm btn-danger">Add New </button>
 
-<table id="" class="table table-striped table-bordered" cellspacing="0" width="100%">
+<table id="serviceDataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
   <thead>
     <tr>
       <th class="th-sm">Image</th>
@@ -55,7 +55,7 @@
     <div class="modal-content">
       <div class="modal-body p-3 text-center">
         <h5 class="mt-4">Do You Want To Delete?</h5>
-        <h5 id="serviceDeleteId" class="mt-4">   </h5>
+        <h5 id="serviceDeleteId" class="mt-4 d-none">   </h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">No</button>
@@ -70,9 +70,14 @@
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-body p-5 text-center">
-
-          <h5 id="serviceEditId" class="mt-4">   </h5>
+    <div class="modal-header">
+        <h5 class="modal-title">Update Service</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-4 text-center">
+          <h5 id="serviceEditId" class="mt-4 d-none">   </h5>
           <div id="serviceEditForm" class="d-none w-100">
           <input id="serviceNameID" type="text" id="" class="form-control mb-4" placeholder="Service Name">
           <input id="serviceDesID" type="text" id="" class="form-control mb-4" placeholder="Service Description">
@@ -144,8 +149,11 @@ function getServicesData() {
                 $('#mainDiv').removeClass('d-none');
                 $('#loaderDiv').addClass('d-none');
 
+               
+                $('#serviceDataTable').DataTable().destroy();
                 $('#service_table').empty();
 
+                
                 var jsonData = response.data;
 
                 $.each(jsonData, function(i, item) {
@@ -174,6 +182,11 @@ function getServicesData() {
                     $('#editModal').modal('show');
 
                 })
+
+                $('#serviceDataTable').DataTable({"order":false});
+                $('.dataTables_length').addClass('bs-select');
+               
+
 
 
             } else {
@@ -397,8 +410,5 @@ function ServiceAdd(serviceName,serviceDes,serviceImg) {
 }
 
 
-
-
-  
 </script>
 @endsection
