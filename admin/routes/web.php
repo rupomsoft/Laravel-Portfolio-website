@@ -45,3 +45,9 @@ Route::post('/ProjectDetails', 'ProjectController@getProjectDetails');
 Route::post('/ProjectDelete', 'ProjectController@ProjectDelete');
 Route::post('/ProjectUpdate', 'ProjectController@ProjectUpdate');
 Route::post('/ProjectAdd', 'ProjectController@ProjectAdd');
+
+// Admin Panel Projects Management 
+Route::get('/Contact', 'ContactController@ContactIndex');
+Route::get('/getContactData', 'ContactController@getContactData');
+Route::post('/ContactDelete', 'ContactController@ContactDelete');
+
