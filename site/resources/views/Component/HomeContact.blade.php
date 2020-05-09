@@ -1,4 +1,4 @@
-<div class="container-fluid section-marginTop parallax text-center">
+<div id="Contact" class="container-fluid section-marginTop parallax text-center">
     <div class="row ">
         <div class="col-md-6 contact-form ">
             <h5 class="help-line-title"> <i class="fas icon-custom-color fa-headphones-alt"></i> হেলপ লাইন </h5>

@@ -6,23 +6,18 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-3 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link nav-font" href="#">হোম </a>
+                <a class="nav-link nav-font" href="/">হোম</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="courses.html">কোর্স সমুহ </a>
+                <a class="nav-link nav-font" href="/Courses">কোর্স সমুহ </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="projects.html">প্রোজেক্ট </a>
+                <a class="nav-link nav-font" href="/Projects">প্রোজেক্ট </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="blog.html">ব্লগ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-font" href="#">যোগাযোগ</a>
+                <a class="nav-link nav-font" href="#Contact">যোগাযোগ</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <button class="normal-btn btn" >সাইন ইন</button>
-        </form>
+
     </div>
 </nav>
