@@ -1,5 +1,5 @@
 @extends('Layout.app')
-
+@section('title','Terms')
 @section('content')
 
     <div class="container-fluid jumbotron mt-5 ">

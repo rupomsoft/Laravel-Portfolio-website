@@ -6,16 +6,16 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-3 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link nav-font" href="/">হোম</a>
+                <a class="nav-link nav-font" href="{{url('/')}}">হোম</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="/Courses">কোর্স সমুহ </a>
+                <a class="nav-link nav-font" href="{{url('/Courses')}}">কোর্স সমুহ </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="/Projects">প্রোজেক্ট </a>
+                <a class="nav-link nav-font" href="{{url('/Projects')}}">প্রোজেক্ট </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="/Contact">যোগাযোগ</a>
+                <a class="nav-link nav-font" href="{{url('/Contact')}}">যোগাযোগ</a>
             </li>
         </ul>
 

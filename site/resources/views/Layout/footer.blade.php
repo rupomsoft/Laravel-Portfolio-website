@@ -17,15 +17,15 @@
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">তথ্য </h3>
                 <hr>
-                <a class="footer-link"  href="/Contact">যোগাযোগ</a><br>
-                <a class="footer-link"   href="/Projects">প্রজেক্ট সমূহ</a><br>
-                <a class="footer-link"  href="/Courses">কোর্স সমূহ </a><br>
+                <a class="footer-link"  href="{{url('/Contact')}}">যোগাযোগ</a><br>
+                <a class="footer-link"   href="{{url('/Projects')}}">প্রজেক্ট সমূহ</a><br>
+                <a class="footer-link"  href="{{url('/Courses')}}">কোর্স সমূহ </a><br>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
                 <h3 class="service-card-title">আইনি</h3>
                 <hr>
-                <a class="footer-link" target="_blank" href="/Policy">প্রাইভেসি পলিসি</a><br>
-                <a class="footer-link" target="_blank" href="/Terms">শর্ত সমূহ </a><br>
+                <a class="footer-link" target="_blank" href="{{url('/Policy')}}">প্রাইভেসি পলিসি</a><br>
+                <a class="footer-link" target="_blank" href="{{url('/Terms')}}">শর্ত সমূহ </a><br>
             </div>
         </div>
     </div>
