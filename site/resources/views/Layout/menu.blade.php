@@ -15,7 +15,7 @@
                 <a class="nav-link nav-font" href="/Projects">প্রোজেক্ট </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font" href="#Contact">যোগাযোগ</a>
+                <a class="nav-link nav-font" href="/Contact">যোগাযোগ</a>
             </li>
         </ul>
 

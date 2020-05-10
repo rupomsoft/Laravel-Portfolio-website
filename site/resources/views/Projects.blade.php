@@ -2,6 +2,7 @@
 @extends('Layout.app')
 
 @section('content')
-    <h1>Projects</h1>
+    @include('Component.ProjectPageTopBanner')
+    @include('Component.AllProject')
 @endsection
 
