@@ -1,16 +1,12 @@
-body {
-    background: #fff;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    overflow-x: hidden;
-    color: #67757c;
-    font-weight: 300;
-}
+
+
 html {
     position: relative;
     min-height: 100%;
     background: #ffffff;
 }
+
+
 
 a:hover,
 a:focus {

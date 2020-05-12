@@ -1,4 +1,5 @@
 @extends('Layout.app')
+@section('title','Reviews')
 @section('content')
 
 <div id="mainDivReview"  class="container  d-none">

@@ -1,4 +1,5 @@
 @extends('Layout.app')
+@section('title','Contact')
 @section('content')
 
 <div id="mainDivContact"  class="container  d-none">
