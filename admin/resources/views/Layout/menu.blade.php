@@ -31,7 +31,7 @@
                         <li> <a href="{{url('/Contact')}}" ><span> <i class="far fa-envelope"></i> </span><span class="hide-menu">Contacts</span></a></li>
 
                         <li> <a href="{{url('/Review')}}" ><span> <i class="far fa-comments"></i> </span><span class="hide-menu">Review</span></a></li>
-
+                        <li> <a href="{{url('/Photo')}}" ><span> <i class="far fa-comments"></i> </span><span class="hide-menu">Photo Gallery</span></a></li>
                     </ul>
                 </nav>
             </div>

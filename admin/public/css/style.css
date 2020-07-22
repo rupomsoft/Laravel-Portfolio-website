@@ -38,3 +38,10 @@ padding: 1% 1% 1% 1% ;
   text-align: center;
   min-height: 100vh;
 }
+
+.imgPreview{
+    border: none;
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
